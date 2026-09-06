@@ -1,0 +1,185 @@
+/* ==========================================================================
+   ABROC CAFE & KITCHEN - DESIGN SYSTEM TOKENS
+   Aesthetic: Dark Espresso, Rich Chocolate, Warm Cream, Hazelnut Gold & Muted Olive
+   ========================================================================== */
+
+:root {
+  /* Color Palette */
+  --bg-primary: #0a0806;
+  --bg-secondary: #130f0c;
+  --bg-tertiary: #1c1612;
+  --bg-surface: #241c17;
+  --bg-surface-elevated: #2f251f;
+  
+  --text-primary: #fcf9f4;
+  --text-secondary: #e2d9cd;
+  --text-muted: #a69888;
+  --text-faint: #6b6053;
+
+  --accent-gold: #c89d66;
+  --accent-gold-light: #e5be8a;
+  --accent-gold-glow: rgba(200, 157, 102, 0.25);
+  --accent-warm-cream: #f4ede2;
+  --accent-olive: #6c7a52;
+  --accent-olive-light: #8b9d6c;
+  --accent-rust: #b35436;
+
+  /* Glassmorphism & Overlays */
+  --glass-bg: rgba(24, 19, 15, 0.72);
+  --glass-bg-hover: rgba(36, 28, 23, 0.88);
+  --glass-border: rgba(200, 157, 102, 0.18);
+  --glass-border-subtle: rgba(255, 255, 255, 0.08);
+  --glass-glow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
+
+  /* Typography */
+  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-accent: 'Cormorant Garamond', Georgia, serif;
+
+  /* Fluid Font Sizes */
+  --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+  --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+  --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-lg: clamp(1.15rem, 1.05rem + 0.5vw, 1.35rem);
+  --text-xl: clamp(1.35rem, 1.2rem + 0.75vw, 1.75rem);
+  --text-2xl: clamp(1.75rem, 1.5rem + 1.25vw, 2.5rem);
+  --text-3xl: clamp(2.25rem, 1.8rem + 2vw, 3.5rem);
+  --text-4xl: clamp(3rem, 2.2rem + 3.5vw, 5.5rem);
+  --text-huge: clamp(3.8rem, 2.8rem + 5vw, 8rem);
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
+  --space-2xl: 6rem;
+  --space-3xl: 9rem;
+
+  /* Transitions */
+  --ease-cinematic: cubic-bezier(0.19, 1, 0.22, 1);
+  --ease-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-fast: 0.25s var(--ease-smooth);
+  --transition-medium: 0.5s var(--ease-cinematic);
+  --transition-slow: 0.9s var(--ease-cinematic);
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 12px 28px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 24px 50px rgba(0, 0, 0, 0.6);
+  --shadow-gold: 0 8px 30px rgba(200, 157, 102, 0.2);
+
+  /* Layout */
+  --container-max: 1360px;
+  --container-wide: 1600px;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+}
+
+/* Base Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+  background-color: var(--bg-primary);
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+
+/* Film Grain Texture Overlay */
+.film-grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Ambient Vignette */
+.ambient-vignette {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  background: radial-gradient(circle at center, transparent 60%, rgba(0, 0, 0, 0.45) 100%);
+}
+
+/* Typography Utility */
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.text-gold {
+  color: var(--accent-gold);
+}
+
+.text-olive {
+  color: var(--accent-olive-light);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container-wide {
+  width: 100%;
+  max-width: var(--container-wide);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}

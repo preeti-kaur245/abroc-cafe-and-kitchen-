@@ -1,0 +1,787 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abroc Cafe & Kitchen | Artisanal Food & Specialty Coffee | Sirhind, Punjab</title>
+  
+  <!-- SEO & Metadata -->
+  <meta name="description" content="Experience Abroc Cafe & Kitchen in Sirhind, Punjab. Handcrafted artisanal coffees, signature hazelnut frappes, gourmet pizzas, crispy paneer burgers, and warm candlelit ambience. Rated 4.7★." />
+  <meta name="keywords" content="Abroc Cafe, Abroc Cafe & Kitchen, Sirhind Cafe, Best cafe in Sirhind, Punjab Cafe, Hazelnut Frappe, Farmhouse Pizza, Paneer Burger, Coffee Shop Shamsher Nagar" />
+  <meta name="author" content="Abroc Cafe & Kitchen" />
+  <meta name="theme-color" content="#0e0b09" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="restaurant.restaurant" />
+  <meta property="og:title" content="Abroc Cafe & Kitchen | Good food. Good coffee. Good moments." />
+  <meta property="og:description" content="A cinematic culinary destination in Sirhind, Punjab. Savor artisanal frappes, wood-fired style pizzas, and unforgettable moments." />
+  <meta property="og:image" content="assets/images/hero_cinematic.jpg" />
+  <meta property="og:url" content="https://abroccafe.odoo.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/abroc_logo.png" />
+  <link rel="apple-touch-icon" href="assets/images/abroc_logo.png" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-tokens.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Abroc Cafe & Kitchen",
+    "image": "assets/images/abroc_logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bassi Road, Shamsher Nagar",
+      "addressLocality": "Sirhind",
+      "addressRegion": "Punjab",
+      "postalCode": "140406",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 30.6384,
+      "longitude": 76.3869
+    },
+    "telephone": "+917087086295",
+    "url": "https://abroccafe.odoo.com",
+    "priceRange": "₹200 - ₹1000",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "210"
+    },
+    "servesCuisine": ["Cafe", "Coffee", "Italian", "Fast Food", "Desserts"],
+    "openingHours": "Mo-Su 10:00-22:30"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Tactile Film Grain & Ambient Vignette -->
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="ambient-vignette" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       1. NAVIGATION HEADER
+       ========================================================================= -->
+  <header class="site-header" id="header">
+    <div class="container-wide nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" data-cursor="view" data-cursor-text="ABROC">
+        <div class="logo-badge">
+          <img src="assets/images/abroc_logo.png" alt="Abroc Cafe & Kitchen Logo" class="brand-logo-img" />
+        </div>
+        <div class="logo-text-group">
+          <span class="brand-title">ABROC</span>
+          <span class="brand-subtitle">CAFE &amp; KITCHEN</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#showcase" class="nav-link">Showcase</a></li>
+          <li><a href="#three-experience" class="nav-link">3D Senses</a></li>
+          <li><a href="#experience" class="nav-link">The Experience</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#menu" class="nav-link">Culinary Menu</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#location" class="nav-link">Visit</a></li>
+        </ul>
+      </nav>
+
+      <!-- Actions & Ambient Audio -->
+      <div class="nav-actions">
+        <button id="sound-toggle-btn" class="btn-sound-toggle btn-magnetic" title="Toggle Cafe Ambience Sound">
+          <div class="sound-bars">
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+            <span class="sound-bar"></span>
+          </div>
+          <span class="sound-status">Ambience</span>
+        </button>
+
+        <a href="#menu" class="btn-primary btn-magnetic" data-cursor="view" data-cursor-text="MENU">
+          <span>Explore Menu</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="hamburger-btn" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         2. HERO SECTION (THE WOW CINEMATIC MOMENT)
+         ========================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop">
+        <div class="hero-video-container">
+          <img src="assets/images/hero_cinematic.jpg" alt="Abroc Cafe artisanal coffee pouring" class="hero-video-bg" />
+          <div class="hero-overlay-gradient"></div>
+        </div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-badge-pill">
+          <span class="hero-badge-dot"></span>
+          <span>Sirhind, Punjab • 4.7 ★ Experience</span>
+        </div>
+
+        <div class="hero-title-wrap">
+          <h1 class="hero-brand-name">ABROC</h1>
+          <div class="hero-brand-sub">CAFE &amp; KITCHEN</div>
+        </div>
+
+        <p class="hero-tagline">
+          “Good food. Good coffee. Good moments.”
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn-primary btn-magnetic" data-cursor="view" data-cursor-text="TASTE">
+            <span>Explore Menu</span>
+            <span style="font-size: 1.1rem;">→</span>
+          </a>
+          <a href="#location" class="btn-secondary btn-magnetic" data-cursor="view" data-cursor-text="VISIT">
+            <span>Visit Abroc</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="#showcase" class="scroll-indicator" aria-label="Scroll to discover">
+        <span class="scroll-text">Scroll to Discover</span>
+        <span class="scroll-chevron"></span>
+      </a>
+    </section>
+
+    <!-- =========================================================================
+         3. FOOD SHOWCASE ("MADE TO MAKE YOU HUNGRY")
+         ========================================================================= -->
+    <section class="food-showcase-section section-padding-lg" id="showcase">
+      <div class="container">
+        <div class="text-center center-block">
+          <span class="section-tag">Culinary Craftsmanship</span>
+          <h2 class="section-title">MADE TO MAKE YOU HUNGRY.</h2>
+          <p class="section-desc center-block">
+            Every dish is handcrafted with slow-simmered sauces, prime cheeses, fresh local produce, and freshly roasted espresso beans.
+          </p>
+        </div>
+
+        <div class="showcase-grid">
+          <!-- Featured Dish: Chicken Tikka Sandwich -->
+          <div class="showcase-card showcase-card-featured tilt-card" data-cursor="explore" data-cursor-text="SANDWICH">
+            <div class="tilt-sheen"></div>
+            <div class="showcase-img-wrap">
+              <img src="assets/images/paneer_tikka_sandwich.jpg" alt="Artisanal Chicken Tikka Sandwich" class="showcase-img" loading="lazy" />
+              <span class="showcase-badge">Chef Signature</span>
+              <span class="showcase-price-tag">₹249</span>
+            </div>
+            <div class="showcase-info">
+              <h3 class="showcase-title">Chicken Tikka Sandwich</h3>
+              <p class="showcase-text">
+                Smoky spiced chicken tikka strips, chargrilled peppers, melted cheese, and signature mint mayo pressed in golden toasted artisanal bread.
+              </p>
+              <div class="showcase-tags">
+                <span class="showcase-tag-pill">Non-Veg</span>
+                <span class="showcase-tag-pill">Smoky Tikka</span>
+                <span class="showcase-tag-pill">House Relish</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 2: Tandoori Paneer Sandwich -->
+          <div class="showcase-card tilt-card" data-cursor="explore" data-cursor-text="TASTE">
+            <div class="tilt-sheen"></div>
+            <div class="showcase-img-wrap">
+              <img src="assets/images/paneer_tikka_sandwich.jpg" alt="Grilled Tandoori Paneer Sandwich" class="showcase-img" loading="lazy" />
+              <span class="showcase-badge">Vegetarian Special</span>
+              <span class="showcase-price-tag">₹219</span>
+            </div>
+            <div class="showcase-info">
+              <h3 class="showcase-title">Tandoori Paneer Sandwich</h3>
+              <p class="showcase-text">
+                Smoky marinated cottage cheese cubes, chargrilled capsicum, melted cheddar, and mint tandoori spread on toasted multigrain sourdough.
+              </p>
+              <div class="showcase-tags">
+                <span class="showcase-tag-pill">Vegetarian</span>
+                <span class="showcase-tag-pill">Chargrilled</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 3: Crispy Chicken Sandwich -->
+          <div class="showcase-card tilt-card" data-cursor="explore" data-cursor-text="CRISPY">
+            <div class="tilt-sheen"></div>
+            <div class="showcase-img-wrap">
+              <img src="assets/images/crispy_chicken_sandwich.jpg" alt="Crispy Chicken Sandwich" class="showcase-img" loading="lazy" />
+              <span class="showcase-badge">Bestseller</span>
+              <span class="showcase-price-tag">₹279</span>
+            </div>
+            <div class="showcase-info">
+              <h3 class="showcase-title">Crispy Chicken Sandwich</h3>
+              <p class="showcase-text">
+                Golden crunchy fried chicken breast fillet, crispy lettuce, tangy house pickles, and spiced chipotle sauce in butter-toasted bread.
+              </p>
+              <div class="showcase-tags">
+                <span class="showcase-tag-pill">Non-Veg</span>
+                <span class="showcase-tag-pill">Crunchy</span>
+                <span class="showcase-tag-pill">Loaded</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 4: Cheese Garlic Bread -->
+          <div class="showcase-card tilt-card" data-cursor="explore" data-cursor-text="CHEESE">
+            <div class="tilt-sheen"></div>
+            <div class="showcase-img-wrap">
+              <img src="assets/images/garlic_bread.jpg" alt="Gourmet Cheese Garlic Bread" class="showcase-img" loading="lazy" />
+              <span class="showcase-badge">Star Starter</span>
+              <span class="showcase-price-tag">₹199</span>
+            </div>
+            <div class="showcase-info">
+              <h3 class="showcase-title">Cheese Garlic Bread</h3>
+              <p class="showcase-text">
+                Artisan French baguette brushed with roasted garlic herb butter, smothered under molten bubbly mozzarella and toasted to golden perfection.
+              </p>
+              <div class="showcase-tags">
+                <span class="showcase-tag-pill">Molten Mozzarella</span>
+                <span class="showcase-tag-pill">Herb Butter</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dish 5: Loaded Nachos Platter -->
+          <div class="showcase-card tilt-card" data-cursor="explore" data-cursor-text="NACHOS">
+            <div class="tilt-sheen"></div>
+            <div class="showcase-img-wrap">
+              <img src="assets/images/loaded_nachos.jpg" alt="Loaded Nachos Platter" class="showcase-img" loading="lazy" />
+              <span class="showcase-badge">Showstopper</span>
+              <span class="showcase-price-tag">₹349</span>
+            </div>
+            <div class="showcase-info">
+              <h3 class="showcase-title">Loaded Nachos Platter</h3>
+              <p class="showcase-text">
+                Crispy corn tortilla chips drowned in warm spiced cheese sauce, fresh zesty salsa fresca, sliced jalapeños, and cool sour cream.
+              </p>
+              <div class="showcase-tags">
+                <span class="showcase-tag-pill">Shareable</span>
+                <span class="showcase-tag-pill">Mexican</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 3.5rem;">
+          <a href="#menu" class="btn-primary btn-magnetic" data-cursor="view" data-cursor-text="MENU">
+            <span>See the Full Menu →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         4. 3D FOOD EXPERIENCE ("YOUR CRAVINGS, IN 3D")
+         ========================================================================= -->
+    <section class="three-experience-section section-padding" id="three-experience">
+      <div class="container">
+        <div class="text-center center-block">
+          <span class="section-tag">Interactive Senses</span>
+          <h2 class="section-title">YOUR CRAVINGS, IN 3D.</h2>
+          <p class="section-desc center-block">
+            Immerse yourself in our floating world of roasted Arabica beans, fresh aromatic basil, and golden culinary textures. Move your cursor to interact.
+          </p>
+        </div>
+
+        <div class="three-canvas-wrapper" data-cursor="drag" data-cursor-text="EXPLORE">
+          <div id="threejs-canvas-container"></div>
+          <div class="three-overlay-hint">
+            <span>✦ Move cursor or scroll to rotate ingredients</span>
+          </div>
+        </div>
+
+        <div class="three-pill-badges">
+          <div class="three-pill-item">
+            <span class="icon">☕</span> Roasted Arabica Beans
+          </div>
+          <div class="three-pill-item">
+            <span class="icon">🌿</span> Fresh Sweet Basil
+          </div>
+          <div class="three-pill-item">
+            <span class="icon">🧀</span> Molten Mozzarella Layers
+          </div>
+          <div class="three-pill-item">
+            <span class="icon">✨</span> Golden Espresso Crema
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         5. THE ABROC EXPERIENCE ("MORE THAN A MEAL")
+         ========================================================================= -->
+    <section class="abroc-experience-section section-padding-lg" id="experience">
+      <div class="container">
+        <div class="experience-hero-banner">
+          <img src="assets/images/abroc_ambience.jpg" alt="Cozy evening ambience at Abroc Cafe" class="experience-img" loading="lazy" />
+          <div class="experience-overlay-content">
+            <div class="floating-keywords-strip">
+              <span class="floating-keyword">FOOD.</span>
+              <span class="floating-keyword">COFFEE.</span>
+              <span class="floating-keyword">PEOPLE.</span>
+              <span class="floating-keyword">MOMENTS.</span>
+            </div>
+            <h2 class="section-title" style="font-size: var(--text-3xl); margin-bottom: 0.5rem;">
+              MORE THAN A MEAL.
+            </h2>
+            <p style="font-family: var(--font-accent); font-size: 1.25rem; color: var(--accent-warm-cream); max-width: 650px;">
+              A place to eat, unwind, meet, click pictures, and make a moment out of an ordinary day.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-grid-features">
+          <div class="feature-pill-card">
+            <div class="feature-icon">🕯️</div>
+            <h3 class="feature-heading">Candlelit Ambience</h3>
+            <p class="feature-desc">Warm Edison lights, dark timber wood, and lush hanging greenery create a soothing evening haven.</p>
+          </div>
+          <div class="feature-pill-card">
+            <div class="feature-icon">☕</div>
+            <h3 class="feature-heading">Artisan Roastery</h3>
+            <p class="feature-desc">Freshly brewed espressos, velvety micro-foam lattes, and thick indulgent frappés made by trained baristas.</p>
+          </div>
+          <div class="feature-pill-card">
+            <div class="feature-icon">📸</div>
+            <h3 class="feature-heading">Aesthetic Picture Spots</h3>
+            <p class="feature-desc">Thoughtfully designed corners and ambient lighting for creating unforgettable memories and photos.</p>
+          </div>
+          <div class="feature-pill-card">
+            <div class="feature-icon">💛</div>
+            <h3 class="feature-heading">Welcoming Hospitality</h3>
+            <p class="feature-desc">Friendly service, fast preparation, and an inviting space tailored for families, dates, and friend circles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         6. SOCIAL PROOF & GOOGLE REVIEWS
+         ========================================================================= -->
+    <section class="social-proof-section section-padding" id="reviews">
+      <div class="container">
+        <div class="text-center center-block">
+          <div class="rating-hero-badge">
+            <div class="rating-score">4.7 ★</div>
+            <div style="text-align: left;">
+              <div class="stars-row">★★★★★</div>
+              <div class="rating-meta-text">200+ Verified Google Reviews</div>
+            </div>
+          </div>
+          <h2 class="section-title">LOVED BY OUR PATRONS.</h2>
+          <p class="section-desc center-block">
+            Here is what our guests have to say about dining and sipping at Abroc Cafe & Kitchen.
+          </p>
+        </div>
+
+        <div class="reviews-carousel" style="margin-top: 3rem;">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div>
+              <div class="quote-mark">“</div>
+              <p class="review-quote">
+                “Tasty food, nice staff and good ambience. The hazelnut frappe and pizza were top notch!”
+              </p>
+            </div>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">RK</div>
+              <div>
+                <div class="reviewer-name">Rahul K.</div>
+                <div class="reviewer-sub">Local Guide • Google Review</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div>
+              <div class="quote-mark">“</div>
+              <p class="review-quote">
+                “Food was delicious. Service excellent. Clean area and very photogenic cafe in Sirhind.”
+              </p>
+            </div>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">PS</div>
+              <div>
+                <div class="reviewer-name">Preet S.</div>
+                <div class="reviewer-sub">Food Enthusiast • Google Review</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div>
+              <div class="quote-mark">“</div>
+              <p class="review-quote">
+                “Nice place to hangout and food was worth it according to price. Best paneer burger!”
+              </p>
+            </div>
+            <div class="reviewer-meta">
+              <div class="reviewer-avatar">AM</div>
+              <div>
+                <div class="reviewer-name">Amanpreet M.</div>
+                <div class="reviewer-sub">Verified Guest • Google Review</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         7. INTERACTIVE MENU EXPERIENCE
+         ========================================================================= -->
+    <section class="menu-section section-padding-lg" id="menu">
+      <div class="container">
+        <div class="text-center center-block">
+          <span class="section-tag">Interactive Kitchen &amp; Bar</span>
+          <h2 class="section-title">EXPLORE OUR CULINARY MENU.</h2>
+          <p class="section-desc center-block">
+            Filter by category or search your favorite dishes. Click any item for a close-up preview and direct WhatsApp ordering.
+          </p>
+        </div>
+
+        <div class="menu-controls">
+          <!-- Search Input -->
+          <div class="menu-search-wrapper">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="menu-search-input" class="menu-search-input" placeholder="Search frappes, burgers, pizzas, snacks..." />
+          </div>
+
+          <!-- Category Tabs -->
+          <div class="menu-tabs" id="menu-tabs-container">
+            <!-- Dynamically populated from menu-data.js -->
+          </div>
+        </div>
+
+        <!-- Dynamic Menu Grid -->
+        <div class="menu-items-grid" id="menu-items-container">
+          <!-- Dynamically populated from menu-data.js -->
+        </div>
+
+        <div class="text-center" style="margin-top: 3.5rem;">
+          <a href="https://wa.me/917087086295?text=Hello%20Abroc%20Cafe,%20I%20would%20like%20to%20place%20an%20order!" target="_blank" rel="noopener noreferrer" class="btn-primary btn-magnetic" data-cursor="view" data-cursor-text="WHATSAPP">
+            <span>Order Online via WhatsApp →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         8. CINEMATIC GALLERY
+         ========================================================================= -->
+    <section class="gallery-section section-padding" id="gallery">
+      <div class="container">
+        <div class="text-center center-block" style="margin-bottom: 2rem;">
+          <span class="section-tag">Visual Diary</span>
+          <h2 class="section-title">THE ABROC GALLERY.</h2>
+          <p class="section-desc center-block">
+            Glimpses into our culinary creations, coffee pours, and warm gatherings.
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery-scroll-container">
+        <!-- Item 1: Food -->
+        <div class="gallery-item" data-cursor="view" data-cursor-text="PIZZA">
+          <img src="assets/images/farmhouse_pizza.jpg" alt="Abroc Farmhouse Pizza" loading="lazy" />
+          <div class="gallery-caption">
+            <span class="gallery-tag">FOOD</span>
+            <h3 class="gallery-title">Farmhouse Pizza Pull</h3>
+          </div>
+        </div>
+
+        <!-- Item 2: Coffee -->
+        <div class="gallery-item" data-cursor="view" data-cursor-text="COFFEE">
+          <img src="assets/images/hero_cinematic.jpg" alt="Abroc Latte Pour" loading="lazy" />
+          <div class="gallery-caption">
+            <span class="gallery-tag">COFFEE</span>
+            <h3 class="gallery-title">Artisan Latte Pour</h3>
+          </div>
+        </div>
+
+        <!-- Item 3: Vibe -->
+        <div class="gallery-item" data-cursor="view" data-cursor-text="VIBE">
+          <img src="assets/images/abroc_ambience.jpg" alt="Abroc Evening Ambience" loading="lazy" />
+          <div class="gallery-caption">
+            <span class="gallery-tag">VIBE</span>
+            <h3 class="gallery-title">Candlelit Evenings</h3>
+          </div>
+        </div>
+
+        <!-- Item 4: Iced Refreshment -->
+        <div class="gallery-item" data-cursor="view" data-cursor-text="ROCKS">
+          <img src="assets/images/peach_iced_tea.jpg" alt="Peach Iced Tea" loading="lazy" />
+          <div class="gallery-caption">
+            <span class="gallery-tag">REFRESH</span>
+            <h3 class="gallery-title">Peach Iced Tea</h3>
+          </div>
+        </div>
+
+        <!-- Item 5: Indulgence -->
+        <div class="gallery-item" data-cursor="view" data-cursor-text="SWEET">
+          <img src="assets/images/brownie_frappe.jpg" alt="Brownie Frappe Indulgence" loading="lazy" />
+          <div class="gallery-caption">
+            <span class="gallery-tag">DESSERT</span>
+            <h3 class="gallery-title">Decadent Brownie Frappé</h3>
+          </div>
+        </div>
+
+        <!-- Item 6: Gourmet Bites -->
+        <div class="gallery-item" data-cursor="view" data-cursor-text="BURGER">
+          <img src="assets/images/crispy_paneer_burger.jpg" alt="Crispy Paneer Burger with Fries" loading="lazy" />
+          <div class="gallery-caption">
+            <span class="gallery-tag">FOOD</span>
+            <h3 class="gallery-title">Crispy Supreme Burger</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         9. SIGNATURE MOMENT
+         ========================================================================= -->
+    <section class="signature-moment-section" id="signature">
+      <div class="signature-backdrop">
+        <img src="assets/images/signature_latte.jpg" alt="Hot Hazelnut Latte with intricate latte art" class="signature-img" loading="lazy" />
+        <div class="signature-overlay"></div>
+      </div>
+      <div class="signature-content">
+        <span class="section-tag" style="color: var(--accent-gold-light);">Artisan Ritual</span>
+        <h2 class="signature-quote">SLOW DOWN.<br />SIP SOMETHING GOOD.</h2>
+        <p class="signature-sub">
+          Crafted with 100% Arabica beans, micro-foamed milk, and pure roasted hazelnut character.
+        </p>
+        <a href="#menu" class="btn-primary btn-magnetic" data-cursor="view" data-cursor-text="BREW">
+          <span>Explore Coffee Menu</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         10. LOCATION & VISIT ("COME FIND US")
+         ========================================================================= -->
+    <section class="location-section section-padding-lg" id="location">
+      <div class="container">
+        <div class="text-center center-block" style="margin-bottom: 3.5rem;">
+          <span class="section-tag">Destination</span>
+          <h2 class="section-title">COME FIND US.</h2>
+          <p class="section-desc center-block">
+            Located conveniently in Shamsher Nagar on Bassi Road, Sirhind. Come say hello or reserve your table.
+          </p>
+        </div>
+
+        <div class="location-layout">
+          <!-- Information Card -->
+          <div class="location-info-card">
+            <div class="info-item">
+              <div class="info-icon-badge">📍</div>
+              <div>
+                <div class="info-heading">Address</div>
+                <div class="info-text">
+                  Abroc Cafe &amp; Kitchen<br />
+                  Bassi Road, Shamsher Nagar<br />
+                  Sirhind, Punjab 140406
+                </div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon-badge">🕒</div>
+              <div>
+                <div class="info-heading">Opening Hours</div>
+                <div class="info-text">
+                  Monday – Sunday<br />
+                  <strong>10:00 AM – 10:30 PM</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon-badge">📞</div>
+              <div>
+                <div class="info-heading">Contact &amp; Reservations</div>
+                <div class="info-text">
+                  <a href="tel:07087086295" style="color: var(--accent-gold-light); font-weight: 700;">
+                    070870 86295
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon-badge">💳</div>
+              <div>
+                <div class="info-heading">Average Cost</div>
+                <div class="info-text">₹200 – ₹1,000 per person</div>
+              </div>
+            </div>
+
+            <div class="location-btn-stack">
+              <a href="https://maps.google.com/?q=Abroc+Cafe+Kitchen+Bassi+Road+Shamsher+Nagar+Sirhind+Punjab" target="_blank" rel="noopener noreferrer" class="btn-primary btn-magnetic" data-cursor="view" data-cursor-text="MAP">
+                <span>Get Directions (Google Maps)</span>
+              </a>
+              <a href="tel:07087086295" class="btn-secondary btn-magnetic" data-cursor="view" data-cursor-text="CALL">
+                <span>Call Abroc Directly</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Embedded Stylized Map -->
+          <div class="location-map-wrap">
+            <iframe 
+              title="Abroc Cafe & Kitchen Map Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27457.652174360377!2d76.3684!3d30.6384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3910061e38ecf2cb%3A0x8e58a2f30b2e8cf3!2sSirhind%2C%20Punjab%20140406!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       11. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 0.85rem;">
+          <img src="assets/images/abroc_logo.png" alt="Abroc Cafe Logo" style="width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid var(--accent-gold); object-fit: cover; box-shadow: 0 0 15px var(--accent-gold-glow);" />
+          <div>
+            <h3 class="footer-brand-title" style="margin-bottom: 0; line-height: 1;">ABROC</h3>
+            <span style="font-size: 0.62rem; font-weight: 700; letter-spacing: 0.28em; color: var(--accent-gold); text-transform: uppercase;">CAFE &amp; KITCHEN</span>
+          </div>
+        </div>
+        <p class="footer-tagline">“Good food. Good coffee. Good moments.”</p>
+        <p style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; max-width: 320px;">
+          Sirhind's premier destination for artisanal coffee, handcrafted comfort dishes, and memorable evenings.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Navigation</h4>
+        <ul class="footer-links-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#showcase">Food Showcase</a></li>
+          <li><a href="#three-experience">3D Experience</a></li>
+          <li><a href="#experience">The Experience</a></li>
+          <li><a href="#menu">Culinary Menu</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Connect</h4>
+        <ul class="footer-links-list">
+          <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://maps.google.com/?q=Abroc+Cafe+Kitchen+Sirhind" target="_blank" rel="noopener noreferrer">Google Maps</a></li>
+          <li><a href="tel:07087086295">Phone: 070870 86295</a></li>
+          <li><a href="https://abroccafe.odoo.com" target="_blank" rel="noopener noreferrer">Official Portal</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-col-title">Visit</h4>
+        <p style="color: var(--text-secondary); font-size: 0.85rem; line-height: 1.6; margin-bottom: 1rem;">
+          Bassi Road, Shamsher Nagar,<br />
+          Sirhind, Punjab 140406<br />
+          Open Daily: 10 AM – 10:30 PM
+        </p>
+        <span class="showcase-tag-pill" style="border-color: var(--accent-gold); color: var(--accent-gold-light);">
+          Rating: 4.7 ★ (200+ Reviews)
+        </span>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>&copy; 2026 Abroc Cafe &amp; Kitchen. All rights reserved.</div>
+      <div class="footer-signature">MADE FOR GOOD MOMENTS.</div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       12. MOBILE BOTTOM FLOATING ACTION BAR
+       ========================================================================= -->
+  <aside class="mobile-bottom-bar" aria-label="Quick mobile navigation">
+    <a href="#menu" class="mobile-bar-btn">
+      <span class="bar-icon">📋</span>
+      <span>Menu</span>
+    </a>
+    <a href="https://wa.me/917087086295?text=Hello%20Abroc%20Cafe,%20I%20would%20like%20to%20order!" target="_blank" rel="noopener noreferrer" class="mobile-bar-btn active">
+      <span class="bar-icon">⚡</span>
+      <span>Order</span>
+    </a>
+    <a href="https://maps.google.com/?q=Abroc+Cafe+Kitchen+Bassi+Road+Shamsher+Nagar+Sirhind+Punjab" target="_blank" rel="noopener noreferrer" class="mobile-bar-btn">
+      <span class="bar-icon">📍</span>
+      <span>Directions</span>
+    </a>
+  </aside>
+
+  <!-- =========================================================================
+       13. DISH DETAIL & ORDER MODAL DIALOG
+       ========================================================================= -->
+  <div class="modal-backdrop" id="dish-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">✕</button>
+      <div class="modal-img-wrap">
+        <img src="" alt="" id="modal-dish-img" class="modal-img" />
+      </div>
+      <div class="modal-body">
+        <div class="modal-header-row">
+          <h3 class="modal-title" id="modal-dish-title"></h3>
+          <span class="modal-price" id="modal-dish-price"></span>
+        </div>
+        <p class="modal-desc" id="modal-dish-desc"></p>
+        <div class="modal-tags" id="modal-dish-tags"></div>
+        <div class="modal-action-row">
+          <a href="#" id="modal-order-whatsapp" target="_blank" rel="noopener noreferrer" class="btn-primary" style="flex: 1;">
+            <span>Order via WhatsApp 💬</span>
+          </a>
+          <a href="tel:07087086295" id="modal-call-cafe" class="btn-secondary" style="flex: 1;">
+            <span>Call to Order 📞</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Three.js CDN for 3D Experience -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <!-- Scripts -->
+  <script src="js/menu-data.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/three-experience.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
